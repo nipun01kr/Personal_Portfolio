@@ -1,0 +1,260 @@
+/* import fonts from fonts.css file */
+
+@import url(./fonts.css);
+
+/* css variables */
+
+@import url(./partials/variables.css);
+
+/*global styling*/
+
+@import url(./partials/global.css);
+
+/* start navigation */
+
+.header_area .main-menu .navbar .navbar-brand {
+    padding: 5 5rem 0 5rem;
+}
+
+.header_area .main-menu .navbar {
+    padding: 0.5rem 0.8rem;
+}
+
+
+/* end navigation */
+
+
+/* Banner Area */
+
+.site-main .site-banner {
+    background: url(../img/banner/home-banner.png) no-repeat 0% 50%;
+}
+
+.site-main .site-banner .site-title h3 {
+    padding-top: 15%;
+    font-weight: 300;
+}
+
+.site-main .site-banner .site-title h1 {
+    font-size: 4rem;
+}
+
+.site-main .site-banner .site-title h4 {
+    font-size: 1.5rem;
+}
+
+.site-main .site-banner .banner-image>img {
+    padding: 7rem 0;
+    width: 90rem;
+}
+
+
+/* End Banner Area */
+
+
+/* Start About Area */
+
+.site-main .about-area {
+    padding: 8rem 5rem;
+}
+
+.site-main .about-area .about-title h2>span {
+    display: block;
+    font: normal bold 49px/ 60px var(--roboto);
+    letter-spacing: 21px;
+}
+
+.site-main .about-area .about-title .paragraph>p {
+    padding: .4rem 0;
+}  
+
+
+/* End About Area */
+
+
+/* Services Area */
+
+.site-main .services-area {
+    padding: 7rem 2rem;
+}
+
+.site-main .services-area .services-title {
+    padding: 0 14rem;
+}
+
+.site-main .services-area .services-title h1 {
+    font-size: 35px;
+}
+
+.site-main>.services-area .services {
+    background: rgba(248, 252, 253, 0.973);
+    padding: 2rem 0;
+    width: 16rem;
+    margin: 5rem .5rem;
+    transition: box-shadow .7s ease;
+}
+
+.site-main>.services-area .services:hover {
+    box-shadow: var(--box-shadow);
+}
+
+
+/* End Services Area */
+
+
+/* End Services Area */
+
+
+/* Projects Section */
+
+#projects {
+    padding: 10rem 0;
+}
+
+#projects .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 15rem;
+    /* gap: 2rem; */
+}
+
+#projects .item:nth-of-type(even) {
+    flex-direction: row-reverse;
+}
+
+#projects .item .left {
+    flex: 1;
+}
+
+#projects .item .right {
+    margin-left: -150px;
+    flex: 1;
+    background-color: var(--body-bg);
+    padding: 2rem 3rem;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px #1ba3e298;
+    z-index: 2;
+}
+
+#projects .item:nth-of-type(even) .right {
+    margin-left: 0;
+}
+
+#projects .item:nth-of-type(even) .left {
+    margin-left: -150px;
+}
+
+#projects .item .left .img {
+    height: 500px;
+    overflow: hidden;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px #1ba3e298;
+    position: relative;
+}
+
+#projects .item .left .img::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #5a24ed38;
+}
+
+#projects .item .left .img img {
+    object-fit: cover;
+    transition: 0.3s ease transform;
+}
+
+#projects .item:hover .left .img img {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+#projects .item .right .project-title {
+    font-size: 2.5rem;
+    font-family: 'Montserrat';
+    margin-bottom: 1rem;
+}
+
+#projects .item .right .project-sub-title {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+#projects .item .right .project-desc {
+    color: var(--secondary-gray);
+    margin-bottom: 3rem;
+}
+
+#projects .item .right .external-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: calc(0.6em - 4px) calc(1.6em - 4px);
+}
+
+#projects .item .right .external-link svg {
+    width: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+    #projects .item {
+        flex-direction: column;
+    }
+    #projects .item .left {
+        width: 100%;
+    }
+    #projects .item .right {
+        margin-left: 0;
+        width: 90%;
+        margin-top: -150px;
+    }
+    #projects .item:nth-of-type(even) {
+        flex-direction: column;
+    }
+    #projects .item:nth-of-type(even) .left {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #projects .item .right .buttons {
+        flex-direction: column;
+    }
+    #projects .item .right .buttons a {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+/*end project area*/
+
+
+/* Footer Area */
+
+footer.footer-area {
+    padding: 3rem 0;
+    background: #000000c7;
+}
+
+footer.footer-area .social h5 {
+    font: normal 500 23px/ 30px var(--roboto);
+}
+
+footer.footer-area .social a>i {
+    font-size: 22px;
+    padding: 2rem;
+    color: var(--border-color);
+}
+
+
+
+/* End Footer */
